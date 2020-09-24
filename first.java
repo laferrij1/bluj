@@ -1,7 +1,8 @@
+// WARNING: This file is auto-generated and any changes to it will be overwritten
 import lang.stride.*;
 
 /**
- * This is a test class to learn stride 
+ * This is a test class to learn stride
  */
 public class first
 {
@@ -13,11 +14,10 @@ public class first
     public first(int test)
     {
         foo = test;
-        
     }
 
     /**
-     * Simple addition 
+     * Simple addition
      */
     public int doit(int parm)
     {
@@ -29,7 +29,7 @@ public class first
     }
 
     /**
-     * Second method 
+     * Second method
      */
     public int method2(int foo)
     {
@@ -44,7 +44,7 @@ public class first
                 break;
             }
             default : {
-                b = -1;
+                b = - 1;
             }
         }
         return b;

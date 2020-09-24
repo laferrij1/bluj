@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class name="first" enable="true" strideversion="1">
+    <javadoc xml:space="preserve">This is a test class to learn stride</javadoc>
+    <imports/>
+    <implements/>
+    <fields>
+        <variable access="private" type="int" type-java="int" name="foo" value="1" value-java="1" enable="true"/>
+    </fields>
+    <constructors>
+        <constructor access="public" enable="true">
+            <javadoc xml:space="preserve">Constructor for objects of class first</javadoc>
+            <params>
+                <param type="int" type-java="int" name="test"/>
+            </params>
+            <throws/>
+            <body>
+                <assign dest="foo" dest-java="foo" src="test" src-java="test" enable="true"/>
+            </body>
+        </constructor>
+    </constructors>
+    <methods>
+        <method access="public" type="int" type-java="int" name="doit" enable="true">
+            <javadoc xml:space="preserve">Simple addition</javadoc>
+            <params>
+                <param type="int" type-java="int" name="parm"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="int" type-java="int" name="c" value="0" value-java="0" enable="true"/>
+                <while condition="c &lt;= 100" condition-java="c &lt;= 100" enable="true">
+                    <assign dest="c" dest-java="c" src="c + 1" src-java="c + 1" enable="true"/>
+                </while>
+                <return value="parm * foo" value-java="parm * foo" enable="true"/>
+            </body>
+        </method>
+        <method access="public" type="int" type-java="int" name="method2" enable="true">
+            <javadoc xml:space="preserve">Second method</javadoc>
+            <params>
+                <param type="int" type-java="int" name="foo"/>
+            </params>
+            <throws/>
+            <body>
+                <variable type="int" type-java="int" name="b" value="0" value-java="0" enable="true"/>
+                <switch expression="foo" expression-java="foo" enable="true">
+                    <cases>
+                        <case expression="1" expression-java="1" enable="true">
+                            <assign dest="b" dest-java="b" src="b + 1" src-java="b + 1" enable="true"/>
+                            <break enable="true"/>
+                        </case>
+                        <case expression="0" expression-java="0" enable="true">
+                            <assign dest="b" dest-java="b" src="b * b" src-java="b * b" enable="true"/>
+                            <break enable="true"/>
+                        </case>
+                    </cases>
+                    <default>
+                        <assign dest="b" dest-java="b" src="- 1" src-java="- 1" enable="true"/>
+                    </default>
+                </switch>
+                <return value="b" value-java="b" enable="true"/>
+            </body>
+        </method>
+    </methods>
+</class>
